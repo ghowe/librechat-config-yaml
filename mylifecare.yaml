@@ -9,7 +9,8 @@ interface:
   # modelSelect: false
   # sidePanel: true
   # presets: false
-  # prompts: false
+  prompts: false
+  
   privacyPolicy:
     externalUrl: 'https://mylifecare.ai/privacy-policy'
     openNewTab: true
@@ -624,27 +625,27 @@ endpoints:
 
     # HuggingFace
     # https://huggingface.co/settings/tokens
-    - name: 'HuggingFace'
-      apiKey: "user_provided"
-      baseURL: 'https://api-inference.huggingface.co/v1'
-      models:
-        default: [
-          "codellama/CodeLlama-34b-Instruct-hf",
-          "google/gemma-1.1-2b-it",
-          "google/gemma-1.1-7b-it",
-          "HuggingFaceH4/starchat2-15b-v0.1",
-          "HuggingFaceH4/zephyr-7b-beta",
-          "meta-llama/Meta-Llama-3-8B-Instruct",
-          "microsoft/Phi-3-mini-4k-instruct",
-          "mistralai/Mistral-7B-Instruct-v0.1",
-          "mistralai/Mistral-7B-Instruct-v0.2",
-          "mistralai/Mixtral-8x7B-Instruct-v0.1",
-          "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
-          ]
-        fetch: true
-      titleConvo: true
-      titleModel: "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO"
-      dropParams: ["top_p"]
+    # - name: 'HuggingFace'
+    #   apiKey: "user_provided"
+    #   baseURL: 'https://api-inference.huggingface.co/v1'
+    #   models:
+    #     default: [
+    #       "codellama/CodeLlama-34b-Instruct-hf",
+    #       "google/gemma-1.1-2b-it",
+    #       "google/gemma-1.1-7b-it",
+    #       "HuggingFaceH4/starchat2-15b-v0.1",
+    #       "HuggingFaceH4/zephyr-7b-beta",
+    #       "meta-llama/Meta-Llama-3-8B-Instruct",
+    #       "microsoft/Phi-3-mini-4k-instruct",
+    #       "mistralai/Mistral-7B-Instruct-v0.1",
+    #       "mistralai/Mistral-7B-Instruct-v0.2",
+    #       "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    #       "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+    #       ]
+    #     fetch: true
+    #   titleConvo: true
+    #   titleModel: "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO"
+    #   dropParams: ["top_p"]
 
     # Mistral AI API
     # Model list: https://docs.mistral.ai/getting-started/models/
@@ -1303,29 +1304,29 @@ endpoints:
     #   iconURL: "https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/icons/ConvoAI.png"
 
     # FreeGPT-4
-    - name: "FreeGPT-4"
-      apiKey: "user_provided"
-      baseURL: "https://api.freegpt4.tech/v1/"
-      models:
-        default: [
-          "gpt-3.5-turbo",
-          "gpt-3.5-turbo-1106",
-          "gpt-3.5-turbo-0125",
-          "gpt-3.5-turbo-16k",
-          "gpt-4",
-          "gpt-4-1106-preview",
-          "gpt-4-0125-preview",
-          "claude",
-          "gemini-pro"
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      modelDisplayLabel: "FreeGPT-4"
-      iconURL: "https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/icons/FreeGPT-4.png"
+    # - name: "FreeGPT-4"
+    #   apiKey: "user_provided"
+    #   baseURL: "https://api.freegpt4.tech/v1/"
+    #   models:
+    #     default: [
+    #       "gpt-3.5-turbo",
+    #       "gpt-3.5-turbo-1106",
+    #       "gpt-3.5-turbo-0125",
+    #       "gpt-3.5-turbo-16k",
+    #       "gpt-4",
+    #       "gpt-4-1106-preview",
+    #       "gpt-4-0125-preview",
+    #       "claude",
+    #       "gemini-pro"
+    #       ]
+    #     fetch: false
+    #   titleConvo: true
+    #   titleModel: "gpt-3.5-turbo"
+    #   summarize: false
+    #   summaryModel: "gpt-3.5-turbo"
+    #   forcePrompt: false
+    #   modelDisplayLabel: "FreeGPT-4"
+    #   iconURL: "https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/icons/FreeGPT-4.png"
  
     # Mandrill
     # - name: "Mandrill"
