@@ -4,12 +4,61 @@ cache: true
 fileStrategy: "firebase"
 
 interface:
+  # UI settings
+  parameters: false
+  modelSelect: false
+  # sidePanel: true
+  # presets: false
+  prompts: false
   privacyPolicy:
     externalUrl: 'https://mylifecare.ai/privacy-policy'
     openNewTab: true
   termsOfService:
     externalUrl: 'https://mylifecare.ai/tos'
-    openNewTab: true
+    openNewTab: true    
+    modalAcceptance: true
+    modalTitle: "Terms of Service for MyLifeCare"
+    modalContent: |
+      # Terms and Conditions for MyLifeCare
+
+      *Effective Date: March 1, 2024*
+
+      Welcome to MyLifeCare, the informational website for the MyLifeCare.ai platform, available at https://MyLifeCare.ai. These Terms of Service ("Terms") govern your use of our website and the services we offer. By accessing or using the Website, you agree to be bound by these Terms and our Privacy Policy, accessible at https://MyLifeCare.ai/privacy.
+      
+      ## 1. Disclaimer
+
+      This tool does not provide medical advice It is intended for research & informational purposes only. It is not a substitute for professional medical advice, diagnosis or treatment. Never ignore professional medical advice in seeking treatment because of something you have read on the MyLifeCare.ai Site. 
+      If you think you may have a medical emergency, immediately call your doctor or dial 911
+
+      ## 2. Ownership
+
+      Upon purchasing a package from MyLifeCare.ai, you are granted the right to download and use the code for accessing the MyLifeCare.ai platform. You are expressly prohibited from reselling, redistributing, or otherwise transferring the code to third parties without explicit permission from MyLifeCare.ai LLC.
+
+      ## 3. User Data
+
+      We collect personal data, such as your name, email address, and payment information, as described in our Privacy Policy. This information is collected to provide and improve our services, process transactions, and communicate with you.
+
+      ## 4. Non-Personal Data Collection
+
+      The Website uses cookies to enhance user experience, analyze site usage, and facilitate certain functionalities. By using the Website, you consent to the use of cookies in accordance with our Privacy Policy.
+
+      ## 5. Use of the Website
+
+      You agree to use the Website only for lawful purposes and in a manner that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the Website. Prohibited behavior includes harassing or causing distress or inconvenience to any person, transmitting obscene or offensive content, or disrupting the normal flow of dialogue within the Website.
+
+      ## 6. Governing Law
+
+      These Terms shall be governed by and construed in accordance with the laws of the United States, without giving effect to any principles of conflicts of law.
+
+      ## 7. Changes to the Terms
+
+      We reserve the right to modify these Terms at any time. We will notify users of any changes by email. Your continued use of the Website after such changes have been notified will constitute your consent to such changes.
+
+      ## 8. Contact Information
+
+      If you have any questions about these Terms, please contact us at contact@MyLifeCare.ai.
+
+      By using the Website, you acknowledge that you have read these Terms of Service and agree to be bound by them.
 
 registration:
   socialLogins: ["discord", "facebook", "github", "google", "openid"]
@@ -467,21 +516,21 @@ endpoints:
     # deepseek
     # https://platform.deepseek.com/api_keys
     # Model list: https://platform.deepseek.com/api-docs/pricing
-    # - name: "deepseek"
-    #   apiKey: "user_provided"
-    #   baseURL: "https://api.deepseek.com"
-    #   models:
-    #     default: [
-    #       "deepseek-chat",
-    #       "deepseek-coder"
-    #       ]
-    #     fetch: false
-    #   titleConvo: true
-    #   titleModel: "deepseek-chat"
-    #   summarize: false
-    #   summaryModel: "deepseek-chat"
-    #   forcePrompt: false
-    #   modelDisplayLabel: "DeepSeek"
+    - name: "deepseek"
+      apiKey: "user_provided"
+      baseURL: "https://api.deepseek.com"
+      models:
+        default: [
+          "deepseek-chat",
+          "deepseek-coder"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "deepseek-chat"
+      summarize: false
+      summaryModel: "deepseek-chat"
+      forcePrompt: false
+      modelDisplayLabel: "DeepSeek"
 
     # Fireworks.ai
     # Models: https://fireworks.ai/models?show=Serverless
